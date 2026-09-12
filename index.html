@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<title>Evan Monheit — Producer / Editor / Composer</title>
+<meta name="description" content="Twenty years shaping stories across film, television, music and immersive entertainment. Emmy-nominated docuseries, trailer campaigns for major studios, orchestral scores recorded to picture.">
+<link rel="canonical" href="https://evanmonheit.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://evanmonheit.com/">
+<meta property="og:title" content="Evan Monheit — Producer / Editor / Composer">
+<meta property="og:description" content="Cut to rhythm. Scored to picture.">
+<meta property="og:image" content="https://evanmonheit.com/uploads/og-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<x-dc>
+<helmet>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#16161A"></rect><text x="100" y="118" text-anchor="middle" font-family="Georgia,serif" font-size="72" fill="#D85A30">EM</text></svg></template>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet" />
+<style>
+  html { scroll-behavior: smooth; scroll-padding-top: 86px; }
+  html, body { margin: 0; padding: 0; background: #16161A; }
+  * { box-sizing: border-box; }
+  a { color: #F2F1EC; text-decoration: none; }
+  a:hover { color: #D85A30; }
+  ::selection { background: #D85A30; color: #16161A; }
+  input, textarea, select, button { font-family: inherit; font-size: inherit; }
+  input::placeholder, textarea::placeholder { color: rgba(242,241,236,0.34); }
+  input:focus, textarea:focus, select:focus { outline: none; border-color: #D85A30 !important; }
+</style>
+</helmet>
+<div style="background:#16161A;color:#F2F1EC;font-family:Archivo,Helvetica,sans-serif;overflow-x:hidden;position:relative">
+
+  <div style="position:fixed;left:0;top:0;bottom:0;width:2px;background:rgba(242,241,236,0.08);z-index:50;pointer-events:none">
+    <div ref="{{ playheadRef }}" style="width:2px;height:0;background:#D85A30;transition:height 60ms linear"></div>
+  </div>
+
+  <header style="position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:32px;padding:20px clamp(22px,4vw,64px);background:rgba(22,22,26,0.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(242,241,236,0.08)">
+    <a href="#top" style="display:block;flex:0 0 auto"><img src="uploads/emp-lockup-horizontal-dark.svg" alt="Evan Monheit Productions" style="display:block;height:clamp(26px,2.4vw,34px);width:auto" /></a>
+    <nav style="display:flex;gap:clamp(14px,2.4vw,38px);align-items:center;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;flex-wrap:wrap;justify-content:flex-end">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#credits">Credits</a>
+      <a href="#contact" style="color:#D85A30">Contact</a>
+    </nav>
+  </header>
+
+  <section id="top" style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));align-items:center;gap:clamp(28px,4vw,72px);padding:clamp(36px,6vh,88px) 0 clamp(48px,9vh,120px) clamp(22px,4vw,64px);min-height:74vh">
+    <div style="position:relative;z-index:2;max-width:660px;padding-right:8px">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(20px,4vh,40px)">
+        <span style="display:block;width:2px;height:46px;background:#D85A30;flex:0 0 auto"></span>
+        <span style="font-size:11px;letter-spacing:0.32em;text-transform:uppercase;color:rgba(242,241,236,0.62);font-weight:500;line-height:1.7">Los&nbsp;Angeles<br />Producer &nbsp;/&nbsp; Editor &nbsp;/&nbsp; Composer</span>
+      </div>
+      <h1 style="font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(44px,6.2vw,100px);line-height:0.94;letter-spacing:-0.015em;margin:0 0 clamp(20px,3vh,32px);text-wrap:balance">Cut to <em style="font-style:italic;color:#D85A30">rhythm</em>. Scored to <em style="font-style:italic;color:#D85A30">picture</em>.</h1>
+      <p style="font-size:clamp(15px,1.15vw,18px);line-height:1.65;color:rgba(242,241,236,0.74);margin:0 0 clamp(28px,4vh,44px);max-width:46ch;text-wrap:pretty">Twenty years shaping stories across film, television, music and immersive entertainment &mdash; Emmy-nominated docuseries, trailer campaigns for major studios, orchestral scores recorded to picture.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center">
+        <a href="#work" style="display:inline-flex;align-items:center;gap:12px;padding:15px 26px;background:#D85A30;color:#16161A;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;font-weight:600;border-radius:2px" style-hover="background:#F2F1EC">View work</a>
+        <a href="#contact" style="display:inline-flex;align-items:center;gap:12px;padding:15px 26px;border:1px solid rgba(242,241,236,0.28);font-size:12px;letter-spacing:0.2em;text-transform:uppercase;font-weight:500;border-radius:2px" style-hover="border-color:#F2F1EC">Get in touch</a>
+      </div>
+    </div>
+
+    <div style="position:relative;align-self:stretch;min-height:clamp(340px,58vh,680px)">
+      <div style="position:absolute;inset:0;overflow:hidden">
+        <img src="uploads/Take-the-first-reference-image-as-the-basis-and-keep-the-mans-face-expression.jpg" alt="Portrait of Evan Monheit" style="width:100%;height:100%;object-fit:cover;object-position:40% 24%;display:block" />
+        <div style="position:absolute;inset:0;background:linear-gradient(90deg,#16161A 0%,rgba(22,22,26,0.55) 16%,rgba(22,22,26,0) 44%)"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(22,22,26,0.5) 0%,rgba(22,22,26,0) 42%)"></div>
+      </div>
+      <span style="position:absolute;left:0;top:7%;bottom:7%;width:2px;background:#D85A30;z-index:2"></span>
+    </div>
+  </section>
+
+  <section id="work" style="border-top:1px solid rgba(242,241,236,0.1);padding:clamp(44px,7vh,96px) clamp(22px,4vw,64px) clamp(56px,9vh,124px)">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:24px;margin-bottom:clamp(28px,4vh,48px)">
+      <div>
+        <h2 style="font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(30px,3.4vw,50px);line-height:1;margin:0 0 10px;letter-spacing:-0.01em">Selected Work</h2>
+        <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(242,241,236,0.5)">{{ countLabel }}</span>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <sc-for list="{{ filters }}" as="f" hint-placeholder-count="4">
+          <button type="button" onClick="{{ f.onClick }}" style="{{ f.style }}" style-hover="border-color:#F2F1EC">{{ f.label }}</button>
+        </sc-for>
+      </div>
+    </div>
+
+    <sc-if value="{{ showFeatured }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:clamp(18px,2.6vh,28px);border-top:1px solid rgba(242,241,236,0.1);padding-top:clamp(20px,3vh,32px)">
+        <span style="font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:rgba(242,241,236,0.92);font-weight:600">Featured</span>
+        <span style="flex:1 1 40px;height:1px;background:rgba(242,241,236,0.12)"></span>
+      </div>
+      <div style="display:grid;grid-template-columns:{{ featGrid }};gap:clamp(24px,3vw,48px);margin-bottom:clamp(40px,6vh,80px)">
+        <sc-for list="{{ featured }}" as="p" hint-placeholder-count="3">
+          <a href="{{ p.href }}" style="display:block;grid-column:{{ p.span }}">
+            <div style="position:relative;margin-bottom:18px">
+              <div style="aspect-ratio:16/9;background:repeating-linear-gradient(45deg,#1D1D22 0 8px,#1A1A1F 8px 16px);border:1px solid rgba(242,241,236,0.14);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;z-index:1" style-hover="border-color:#D85A30">
+                <sc-if value="{{ p.hasPoster }}">
+                  <img loading="lazy" src="{{ p.poster }}" alt="{{ p.title }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+                </sc-if>
+                <sc-if value="{{ p.noPoster }}" hint-placeholder-val="{{ true }}">
+                  <span style="font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(242,241,236,0.32)">poster frame</span>
+                </sc-if>
+                <span style="position:absolute;left:0;top:12%;bottom:12%;width:2px;background:#D85A30;z-index:1"></span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:8px">
+              <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#D85A30;font-weight:500">{{ p.roleLabel }}</span>
+              <span style="font-size:11px;letter-spacing:0.16em;color:rgba(242,241,236,0.6)">{{ p.year }}</span>
+            </div>
+            <div style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(24px,2.2vw,34px);line-height:1.12;margin-bottom:10px">{{ p.title }}</div>
+            <p style="font-size:14px;line-height:1.6;color:rgba(242,241,236,0.6);margin:0;max-width:56ch;min-height:4.8em;text-wrap:pretty">{{ p.blurb }}</p>
+          </a>
+        </sc-for>
+      </div>
+    </sc-if>
+
+    <sc-for list="{{ sections }}" as="s" hint-placeholder-count="4">
+      <div style="margin-bottom:clamp(38px,5.5vh,72px)">
+        <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:clamp(18px,2.6vh,28px);border-top:1px solid rgba(242,241,236,0.1);padding-top:clamp(20px,3vh,32px)">
+          <span style="display:block;width:2px;height:20px;background:#D85A30;flex:0 0 auto"></span>
+          <span style="font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:rgba(242,241,236,0.7);font-weight:500">{{ s.name }}</span>
+          <span style="font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:0.14em;color:rgba(242,241,236,0.45);margin-left:auto">{{ s.count }}</span>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,232px),1fr));gap:clamp(18px,2.2vw,30px)">
+          <sc-for list="{{ s.items }}" as="p" hint-placeholder-count="6">
+            <a href="{{ p.href }}" style="display:block">
+              <div style="aspect-ratio:16/9;background:repeating-linear-gradient(45deg,#1D1D22 0 8px,#1A1A1F 8px 16px);border:1px solid rgba(242,241,236,0.1);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;margin-bottom:12px" style-hover="border-color:#D85A30">
+                <sc-if value="{{ p.hasPoster }}">
+                  <img loading="lazy" src="{{ p.poster }}" alt="{{ p.title }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+                </sc-if>
+                <sc-if value="{{ p.noPoster }}" hint-placeholder-val="{{ true }}">
+                  <span style="font-family:ui-monospace,Menlo,monospace;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(242,241,236,0.28)">poster frame</span>
+                </sc-if>
+              </div>
+              <div style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#D85A30;font-weight:500;margin-bottom:6px">{{ p.roleLabel }}</div>
+              <div style="font-size:15px;line-height:1.35;font-weight:500;margin-bottom:4px">{{ p.title }}</div>
+              <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+                <span style="font-size:11px;letter-spacing:0.14em;color:rgba(242,241,236,0.6)">{{ p.year }}</span>
+                <sc-if value="{{ p.isGroup }}">
+                  <span style="font-family:ui-monospace,Menlo,monospace;font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:rgba(242,241,236,0.65);border:1px solid rgba(242,241,236,0.22);padding:2px 7px">{{ p.count }}</span>
+                </sc-if>
+              </div>
+            </a>
+          </sc-for>
+        </div>
+      </div>
+    </sc-for>
+  </section>
+
+  <section style="border-top:1px solid rgba(242,241,236,0.1);padding:clamp(40px,6vh,84px) clamp(22px,4vw,64px)">
+    <div style="font-size:11px;letter-spacing:0.32em;text-transform:uppercase;color:rgba(242,241,236,0.5);font-weight:500;margin-bottom:clamp(24px,4vh,40px)">Networks, studios &amp; clients</div>
+    <div style="display:flex;flex-wrap:wrap;gap:clamp(16px,2.4vw,40px) clamp(24px,3.4vw,56px);align-items:center">
+      <sc-for list="{{ clients }}" as="c" hint-placeholder-count="20">
+        <span style="font-size:clamp(15px,1.5vw,21px);font-weight:500;letter-spacing:0.04em;color:rgba(242,241,236,0.72)">{{ c }}</span>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="about" style="border-top:1px solid rgba(242,241,236,0.1);padding:clamp(48px,8vh,112px) clamp(22px,4vw,64px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(32px,4vw,72px);align-items:start">
+      <div style="position:relative">
+        <img src="uploads/photo_assets-1788975053879-ct32.png" alt="Evan Monheit conducting the orchestra for Phantom Bridge" style="width:100%;height:auto;display:block;border:1px solid rgba(242,241,236,0.12)" />
+        <div style="font-size:11px;letter-spacing:0.14em;color:rgba(242,241,236,0.6);margin-top:12px;line-height:1.7">Recording and conducting the score for Princess Cruises&rsquo; <span style="font-family:'Instrument Serif',serif;font-style:italic;font-size:14px;color:rgba(242,241,236,0.72)">Phantom Bridge</span></div>
+      </div>
+      <div>
+        <h2 style="font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(32px,3.8vw,58px);line-height:1;margin:0 0 clamp(20px,3vh,32px);letter-spacing:-0.015em">One pair of hands,<br />from cut to score.</h2>
+        <div style="display:flex;flex-direction:column;gap:18px;font-size:clamp(15px,1.1vw,17px);line-height:1.7;color:rgba(242,241,236,0.76)">
+          <p style="margin:0;text-wrap:pretty">Evan Monheit is a Los&nbsp;Angeles&ndash;based producer, editor and composer with over twenty years across film, television, music and immersive entertainment. His work bridges high-profile media projects with deeply human narratives.</p>
+          <p style="margin:0;text-wrap:pretty">At Hearst Media Production Group he served as Supervising Producer and Lead Editor on <em style="font-family:'Instrument Serif',serif;font-style:italic;font-size:1.12em;color:#F2F1EC">Oddly Satisfying Science</em> for Curiosity Stream, directed segments for NBC&rsquo;s <em style="font-family:'Instrument Serif',serif;font-style:italic;font-size:1.12em;color:#F2F1EC">Earth Odyssey</em> and ABC&rsquo;s <em style="font-family:'Instrument Serif',serif;font-style:italic;font-size:1.12em;color:#F2F1EC">Oh Baby!</em>, and was Supervising Post Producer and Lead Editor on the Emmy-nominated <em style="font-family:'Instrument Serif',serif;font-style:italic;font-size:1.12em;color:#F2F1EC">Play It Forward with the Harlem Globetrotters</em>, now in its third season on NBC.</p>
+          <p style="margin:0;text-wrap:pretty">His scoring work spans feature films, trailers, immersive media and modern dance &mdash; the full score for the horror feature <em style="font-family:'Instrument Serif',serif;font-style:italic;font-size:1.12em;color:#F2F1EC">The Chosen</em>, ghostwriting for Academy Award&ndash;winner John Ottman on Hammer Films&rsquo; <em style="font-family:'Instrument Serif',serif;font-style:italic;font-size:1.12em;color:#F2F1EC">The Resident</em>, and trailer campaigns for <em style="font-family:'Instrument Serif',serif;font-style:italic;font-size:1.12em;color:#F2F1EC">The Dark Knight Rises</em>, <em style="font-family:'Instrument Serif',serif;font-style:italic;font-size:1.12em;color:#F2F1EC">Poltergeist</em>, <em style="font-family:'Instrument Serif',serif;font-style:italic;font-size:1.12em;color:#F2F1EC">Versace</em>, <em style="font-family:'Instrument Serif',serif;font-style:italic;font-size:1.12em;color:#F2F1EC">Orphan</em> and <em style="font-family:'Instrument Serif',serif;font-style:italic;font-size:1.12em;color:#F2F1EC">Cowboys &amp; Aliens</em>.</p>
+          <p style="margin:0;text-wrap:pretty">In 2025 he returned to his roots with <em style="font-family:'Instrument Serif',serif;font-style:italic;font-size:1.12em;color:#F2F1EC">Bloomers: The Lost Season</em> &mdash; fourteen new episodes of the award-winning series, completed frame by frame as a one-man post team in honour of his late friend, creator Matt Palazzolo.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:clamp(20px,2.6vw,40px);margin-top:clamp(32px,5vh,64px)">
+      <div>
+        <img src="uploads/photo_assets-1788975083646-mer0.png" alt="Evan Monheit conducting a scoring session" style="width:100%;height:clamp(220px,30vh,340px);object-fit:cover;object-position:62% 28%;display:block;border:1px solid rgba(242,241,236,0.12)" />
+        <div style="font-size:11px;letter-spacing:0.14em;color:rgba(242,241,236,0.6);margin-top:12px">Scoring stage</div>
+      </div>
+      <div>
+        <img src="uploads/photo_assets-1788974952022-pzt6.png" alt="Evan Monheit directing a scene on location" style="width:100%;height:clamp(220px,30vh,340px);object-fit:cover;object-position:76% 44%;display:block;border:1px solid rgba(242,241,236,0.12)" />
+        <div style="font-size:11px;letter-spacing:0.14em;color:rgba(242,241,236,0.6);margin-top:12px">Directing on location &mdash; ABC</div>
+      </div>
+      <div>
+        <img src="uploads/photo_assets-1788974754713-lr72.jpg" alt="Evan Monheit reviewing a script on set" style="width:100%;height:clamp(220px,30vh,340px);object-fit:cover;object-position:74% 42%;display:block;border:1px solid rgba(242,241,236,0.12);filter:grayscale(1) contrast(1.1)" />
+        <div style="font-size:11px;letter-spacing:0.14em;color:rgba(242,241,236,0.6);margin-top:12px">On set, between takes</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="credits" style="border-top:1px solid rgba(242,241,236,0.1);padding:clamp(48px,8vh,112px) clamp(22px,4vw,64px)">
+    <h2 style="font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(30px,3.4vw,50px);line-height:1;margin:0 0 clamp(32px,5vh,56px);letter-spacing:-0.01em">Credits</h2>
+    <sc-for list="{{ creditGroups }}" as="g" hint-placeholder-count="3">
+      <div style="margin-bottom:clamp(36px,5vh,64px)">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px">
+          <span style="display:block;width:2px;height:20px;background:#D85A30;flex:0 0 auto"></span>
+          <span style="font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:rgba(242,241,236,0.62);font-weight:500">{{ g.name }}</span>
+        </div>
+        <sc-for list="{{ g.items }}" as="c" hint-placeholder-count="5">
+          <div style="display:flex;flex-wrap:wrap;gap:6px clamp(16px,2vw,32px);align-items:baseline;padding:14px 0;border-bottom:1px solid rgba(242,241,236,0.08)">
+            <span style="font-size:clamp(15px,1.2vw,18px);font-weight:500;line-height:1.35;flex:1 1 260px;min-width:0">{{ c.title }}</span>
+            <span style="font-size:12px;letter-spacing:0.1em;color:rgba(242,241,236,0.62);line-height:1.5;flex:1 1 180px;min-width:0">{{ c.role }}</span>
+            <span style="font-size:12px;letter-spacing:0.12em;color:rgba(242,241,236,0.6);flex:0 0 auto;margin-left:auto">{{ c.meta }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </sc-for>
+  </section>
+
+  <section id="contact" style="border-top:1px solid rgba(242,241,236,0.1);padding:clamp(48px,8vh,112px) clamp(22px,4vw,64px) clamp(56px,9vh,120px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(32px,4vw,72px);align-items:start">
+      <div>
+        <h2 style="font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(32px,3.8vw,58px);line-height:1;margin:0 0 20px;letter-spacing:-0.015em">Start a project.</h2>
+        <p style="font-size:clamp(15px,1.1vw,17px);line-height:1.7;color:rgba(242,241,236,0.74);margin:0 0 clamp(28px,4vh,40px);max-width:42ch;text-wrap:pretty">Post supervision, edit, or score &mdash; tell me what the story is and where it needs to go.</p>
+        <div style="display:flex;align-items:center;gap:18px;margin-bottom:clamp(24px,4vh,36px)">
+          <div role="img" aria-label="Evan Monheit" style="width:112px;height:138px;flex:0 0 auto;border-radius:2px;background-image:url('uploads/photo_assets-1788974952022-pzt6.png');background-size:auto 300%;background-position:74% 40%;background-repeat:no-repeat;background-color:#1D1D22"></div>
+          <div style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(242,241,236,0.6);line-height:2">Evan Monheit<br /><a href="mailto:evan@evanmonheit.com" style="color:#D85A30;letter-spacing:0.12em;text-transform:none;font-size:13px">evan@evanmonheit.com</a></div>
+        </div>
+      </div>
+      <form onSubmit="{{ onSubmit }}" style="display:flex;flex-direction:column;gap:18px">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:18px">
+          <label style="display:flex;flex-direction:column;gap:8px"><span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(242,241,236,0.54);font-weight:500">Name</span><input type="text" name="name" required="" placeholder="Your name" style="background:transparent;border:1px solid rgba(242,241,236,0.22);color:#F2F1EC;padding:13px 14px;border-radius:2px" /></label>
+          <label style="display:flex;flex-direction:column;gap:8px"><span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(242,241,236,0.54);font-weight:500">Email</span><input type="email" name="email" required="" placeholder="you@studio.com" style="background:transparent;border:1px solid rgba(242,241,236,0.22);color:#F2F1EC;padding:13px 14px;border-radius:2px" /></label>
+        </div>
+        <label style="display:flex;flex-direction:column;gap:8px"><span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(242,241,236,0.54);font-weight:500">What do you need</span><select name="need" style="background:#16161A;border:1px solid rgba(242,241,236,0.22);color:#F2F1EC;padding:13px 14px;border-radius:2px"><option>Producing / post supervision</option><option>Editorial</option><option>Original score</option><option>Trailer music</option><option>Something else</option></select></label>
+        <label style="display:flex;flex-direction:column;gap:8px"><span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(242,241,236,0.54);font-weight:500">The project</span><textarea name="message" rows="5" placeholder="Format, timeline, where it lives." style="background:transparent;border:1px solid rgba(242,241,236,0.22);color:#F2F1EC;padding:13px 14px;border-radius:2px;resize:vertical"></textarea></label>
+        <button type="submit" disabled="{{ formBusy }}" style="align-self:flex-start;padding:15px 30px;background:#D85A30;color:#16161A;border:0;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;font-weight:600;border-radius:2px;cursor:pointer" style-hover="background:#F2F1EC">Send it over</button>
+        <span style="font-size:11px;letter-spacing:0.1em;color:rgba(242,241,236,0.4);font-family:ui-monospace,Menlo,monospace">{{ formNote }}</span>
+      </form>
+    </div>
+  </section>
+
+  <footer style="border-top:1px solid rgba(242,241,236,0.1);padding:clamp(40px,6vh,72px) clamp(22px,4vw,64px);display:flex;align-items:flex-end;justify-content:space-between;gap:32px;flex-wrap:wrap">
+    <img src="uploads/emp-lockup-stacked-dark.svg" alt="Evan Monheit Productions" style="display:block;height:clamp(74px,8vw,104px);width:auto" />
+    <div style="font-size:11px;letter-spacing:0.16em;color:rgba(242,241,236,0.6);line-height:2;text-align:right">Los Angeles, California<br />&copy; 2026 Evan Monheit Productions</div>
+  </footer>
+
+  <sc-if value="{{ hasProject }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed;inset:0;z-index:60;background:#16161A;overflow-y:auto;overscroll-behavior:contain">
+      <header style="position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:20px clamp(22px,4vw,64px);background:rgba(22,22,26,0.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(242,241,236,0.08)">
+        <a href="#top" style="display:block;flex:0 0 auto"><img src="uploads/emp-lockup-horizontal-dark.svg" alt="Evan Monheit Productions" style="display:block;height:clamp(26px,2.4vw,34px);width:auto" /></a>
+        <a href="#work" style="display:inline-flex;align-items:center;gap:10px;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;font-weight:500;color:rgba(242,241,236,0.78)" style-hover="color:#D85A30"><span style="display:block;width:18px;height:1px;background:currentColor"></span>All work</a>
+      </header>
+
+      <article style="padding:clamp(36px,6vh,80px) clamp(22px,4vw,64px) clamp(56px,9vh,120px);max-width:1320px;margin:0 auto">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:clamp(24px,3.5vw,64px);align-items:end;margin-bottom:clamp(28px,4vh,52px)">
+          <div>
+            <div style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(18px,3vh,30px)">
+              <span style="display:block;width:2px;height:36px;background:#D85A30;flex:0 0 auto"></span>
+              <span style="font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:#D85A30;font-weight:500;line-height:1.7">{{ project.roleLabel }}</span>
+            </div>
+            <h1 style="font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(36px,5vw,80px);line-height:0.98;letter-spacing:-0.018em;margin:0;text-wrap:balance">{{ project.title }}</h1>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:18px;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(242,241,236,0.5);line-height:1.8">
+            <div><span style="display:block;color:rgba(242,241,236,0.4);margin-bottom:6px">Year of production</span><span style="font-size:15px;letter-spacing:0.12em;color:#F2F1EC">{{ project.year }}</span></div>
+            <div><span style="display:block;color:rgba(242,241,236,0.4);margin-bottom:6px">Category</span><span style="font-size:15px;letter-spacing:0.12em;color:#F2F1EC">{{ project.roleLabel }}</span></div>
+          </div>
+        </div>
+
+        <sc-if value="{{ project.noTracks }}" hint-placeholder-val="{{ true }}">
+        <div style="aspect-ratio:16/9;width:100%;background:#0F0F12;border:1px solid rgba(242,241,236,0.14);position:relative;overflow:hidden;margin-bottom:clamp(24px,4vh,44px)">
+          <sc-if value="{{ project.hasVideo }}">
+            <iframe src="{{ project.embed }}" title="{{ project.title }}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;inset:0;width:100%;height:100%;border:0;display:block"></iframe>
+          </sc-if>
+          <sc-if value="{{ project.noVideo }}">
+            <img loading="lazy" src="{{ project.poster }}" alt="{{ project.title }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+          </sc-if>
+        </div>
+        </sc-if>
+        <sc-if value="{{ project.hasTracks }}">
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr));gap:clamp(24px,3vw,44px);margin-bottom:clamp(24px,4vh,44px)">
+            <sc-for list="{{ project.tracks }}" as="t" hint-placeholder-count="3">
+              <div>
+                <div style="aspect-ratio:16/9;width:100%;background:#0F0F12;border:1px solid rgba(242,241,236,0.14);position:relative;overflow:hidden">
+                  <iframe loading="lazy" src="{{ t.embed }}" title="{{ t.title }}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;inset:0;width:100%;height:100%;border:0;display:block"></iframe>
+                </div>
+                <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:12px">
+                  <span style="font-size:15px;font-weight:500;line-height:1.35;color:#F2F1EC">{{ t.title }}</span>
+                  <span style="font-size:11px;letter-spacing:0.14em;color:rgba(242,241,236,0.6)">{{ t.year }}</span>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+
+        <p style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(19px,1.9vw,28px);line-height:1.5;color:rgba(242,241,236,0.82);margin:0 0 clamp(48px,7vh,96px);max-width:62ch;text-wrap:pretty">{{ project.blurb }}</p>
+
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:clamp(22px,3.5vh,36px);border-top:1px solid rgba(242,241,236,0.1);padding-top:clamp(28px,4vh,48px)">
+          <span style="display:block;width:2px;height:20px;background:#D85A30;flex:0 0 auto"></span>
+          <span style="font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:rgba(242,241,236,0.62);font-weight:500">Related projects</span>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:clamp(16px,2vw,28px)">
+          <sc-for list="{{ related }}" as="r" hint-placeholder-count="6">
+            <a href="{{ r.href }}" style="display:block">
+              <div style="aspect-ratio:16/9;background:repeating-linear-gradient(45deg,#1D1D22 0 8px,#1A1A1F 8px 16px);border:1px solid rgba(242,241,236,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:12px;position:relative;overflow:hidden" style-hover="border-color:#D85A30">
+                <sc-if value="{{ r.hasPoster }}">
+                  <img loading="lazy" src="{{ r.poster }}" alt="{{ r.title }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+                </sc-if>
+                <sc-if value="{{ r.noPoster }}" hint-placeholder-val="{{ true }}">
+                  <span style="font-family:ui-monospace,Menlo,monospace;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(242,241,236,0.28)">poster frame</span>
+                </sc-if>
+              </div>
+              <div style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#D85A30;font-weight:500;margin-bottom:6px">{{ r.roleLabel }}</div>
+              <div style="font-size:15px;line-height:1.35;font-weight:500">{{ r.title }}</div>
+            </a>
+          </sc-for>
+        </div>
+      </article>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;worksLayout&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;tiered&quot;,&quot;flat&quot;],&quot;default&quot;:&quot;tiered&quot;,&quot;tsType&quot;:&quot;'tiered' | 'flat'&quot;,&quot;section&quot;:&quot;Select Works&quot;}}">
+const POSTERS = {
+  "the-party": "uploads/The%20Party%20Poster%20169.png",
+  "showdown": "uploads/Website%20Images%20for%20Claude%20Design/1112433421-c759d54e9b339bea481b8846d1f3ae870531e33a9f3b1cacd29fa3cc6e03978c-d_960.jpg",
+  "metamorphosis": "uploads/Website%20Images%20for%20Claude%20Design/700017272-8c2ba6aa14819530d094fe53cfc204bef70b0550133113317ad1b6e92baa82e4-d_1280.jpg",
+  "the-resident": "uploads/Website%20Images%20for%20Claude%20Design/464950003-e425d5decc3b4ec924e399759c4f9019c66bd93907e5304fca5c10ad1d431066-d_1280.jpg",
+  "the-empress-and-the-thief": "uploads/Website%20Images%20for%20Claude%20Design/688363565-12ec8f67887434ae84b463cf4c3d064c482f8f89f6dfb29263f9b0f4852cbad3-d_1280.jpg",
+  "element-of-air": "uploads/Website%20Images%20for%20Claude%20Design/1642270503-c6b79a674bd3bf3f6449fa7aea311d032e1b25054e149850be73f1cde6e7ac40-d_1280.jpg",
+  "eldars-quest": "uploads/Website%20Images%20for%20Claude%20Design/606288669-0c38ec22f17b8a57c0d18d1fc036d818aa008bf062dced6aca029e0bf95d4fb5-d_1280.jpg",
+  "deep-secrets": "uploads/Website%20Images%20for%20Claude%20Design/1642893701-0c963c6e5a86274ad5063eaf7c2c17111c215d306c9e61773da9c1db7183013d-d_1280-1.jpg",
+  "beneath-the-stars": "uploads/Website%20Images%20for%20Claude%20Design/1643709095-05d6ff73fc752cb5af40d05d924291de5aadefa25e8524caea103fd9a5bd20f2-d_1280-1.jpg",
+  "batten-the-hatches": "uploads/Website%20Images%20for%20Claude%20Design/1643689808-847ff7e3fb996c9c6c25702fc0c9f0bfdcaa3e4a6237aeb68714120c927e163e-d_1280.jpg",
+  "warp-speed": "uploads/Website%20Images%20for%20Claude%20Design/1643702546-22ed1e5c2d3ff64a01eeb7fe4846e8ffb3487f9166a70701a65f03c1761f76ca-d_1280.jpg",
+  "fx-fearless": "uploads/Website%20Images%20for%20Claude%20Design/1109755398-341455afaf3a349ba469368bb47819dcb8e49bbf14bc36bb49dacc5256070c9d-d_1280.jpg",
+  "trailer-batman-dark-knight-rises": "uploads/Website%20Images%20for%20Claude%20Design/464803738-17c6865c78e2d94b55f831505f8cfc68e6a3e19673c2edd275e4e6b3b62afa97-d_1280.jpg",
+  "fx-trailer-american-crime-story-versace": "uploads/Website%20Images%20for%20Claude%20Design/686706119-e83a46c23752e451481367da645779d8b8799cbb29a9521f3a45eb38f95090ed-d_1280.jpg",
+  "cowboys-and-aliens": "uploads/Website%20Images%20for%20Claude%20Design/464806022-823794119170198d83550d3043f51fa85bc73a461634345dc7e967493e19dd95-d_1280.jpg",
+  "trailer-orphan": "uploads/Website%20Images%20for%20Claude%20Design/1643733977-0a8446d83cf719610f61e5d9cd4d0b70697bb0141876678894968d7907a70d32-d_640.jpg",
+  "trailer-whiteout": "uploads/Website%20Images%20for%20Claude%20Design/1643736294-d60a0c4b81ad87a134dfb402341c8e18aca9e820657473209f5909c578e8d5ef-d_1280.jpg",
+  "film-clip-the-chosen-story-of-lilith": "uploads/Website%20Images%20for%20Claude%20Design/601119307-f6a68a3b9bead61603bd5c1860bf5e72a25733dad1c7498864b2d8cc7e932acb-d_1280-1.jpg",
+  "skechers-just-bounce": "uploads/Website%20Images%20for%20Claude%20Design/1112429578-e4a6e3d79d839f1a534c57f2c28c195479b632a703b226fd5ea96dbe0e1af091-d_640.jpg",
+  "skechers-puppy-tough": "uploads/Website%20Images%20for%20Claude%20Design/1643994619-bcba93195ed624639cde76657f85a397229b829cea11f5946255e4c8a13b76cd-d_640.jpg",
+  "welcome-to-the-bridge": "uploads/Website%20Images%20for%20Claude%20Design/1643982239-a9ef2d131516a2abf07345f6bc7887f2ae07462ed1701091ad03cde7fc19079d-d_1280.jpg",
+  "fire-in-the-hole": "uploads/Website%20Images%20for%20Claude%20Design/1109923596-804315a2398e8505f429a56b69c35ed2fc1eb4426e6e6a9f25b93041ba12c0ba-d_1280.jpg",
+  "mission-accomplished": "uploads/Website%20Images%20for%20Claude%20Design/1643988235-2e71b019e3b4e3bb456f3ddb01948ccb32886c4da9f8ce514b2ee78987c0535b-d_1280.jpg",
+  "dance-headspace": "uploads/Website%20Images%20for%20Claude%20Design/1644006314-6633a84f466f8c0cfa4fe0a6e2062a8ada67b4e1a0e3178c82ecf4277c6f9975-d_640.jpg",
+  "the-housefly": "uploads/Website%20Images%20for%20Claude%20Design/539452025-235d25a46a773f4db6068de42eb62f12cb13870f0618fb7851261b5ae9c0d620-d_1280.jpg",
+  "across-the-seas": "uploads/Website%20Images%20for%20Claude%20Design/539608699-ca9e2c7f2908f35c82ce8f7f007d69097e62a58fd249915fb5964fc080429c4c-d_1280.jpg",
+  "the-forgotten": "uploads/Website%20Images%20for%20Claude%20Design/1248575996-ea422b0b345507e402cd59feb3827cca06b03f47be88d13c2dcb8e9c59ab855e-d_1280.jpg",
+  "spotify-secret-genius": "uploads/Website%20Images%20for%20Claude%20Design/1106772182-fcdf38d68f23fc6782d3fe155552d496855260aa5fa943acd58282afc239acb4-d_1280.jpg",
+  "oddly-satisfying-science": "uploads/Website%20Images%20for%20Claude%20Design/1650808720-e9a7d1862674606a5b2284748f389034064fa84b83fea8249dfd6dc778367998-d_1280.jpg",
+  "nbc-play-it-forward": "uploads/Website%20Images%20for%20Claude%20Design/1650820579-bac25b92598d256eb4d6aee371de3b212aca363555fdeae712c0bf03f3d11d87-d_1280.jpg",
+  "wetv-petty-court": "uploads/Website%20Images%20for%20Claude%20Design/1106738260-275d838b438b316c6b333da7431fbb845bc8799038e0e6ad002d9139765b6887-d_1280.jpg",
+  "poptv-roccos-weho": "uploads/Website%20Images%20for%20Claude%20Design/1106750545-2f5ac17b37f22deb5dad3a836092ae45c74b789c87f0234af2c227476a44c087-d_1280.jpg",
+  "freeform-growing-up-gonzalez": "uploads/Website%20Images%20for%20Claude%20Design/1650827821-843d16b8aa87c1872e2081dcab116c4fa314574ede5b4694064bb700779dc4ee-d_1280.jpg",
+  "nickelodeon-thats-easy-for-you-to-say": "uploads/Website%20Images%20for%20Claude%20Design/1106733279-7d1a69b4d36f38f5e0f7b1842b6b61008d0991c9c9a38f9ecda826ee47624015-d_1280.jpg",
+  "travel-channel-southern-psychic": "uploads/Website%20Images%20for%20Claude%20Design/1118471176-ef80f3a5fda48c2942698a7406857a14257fd4ed509e2070d03f4a99f27bf960-d_1280.jpg",
+  "oxygen-the-love-car": "uploads/Website%20Images%20for%20Claude%20Design/1650839383-60e557be07e2961c411227ade9f24bde303b4b09cc04e777d4ebee6db079e70d-d_1280.jpg",
+  "lifetime-temmoraland": "uploads/Website%20Images%20for%20Claude%20Design/1650843507-e1091ebe047faa3db38bd31690ffec95f45d2127c2f673e3073667eb5c44122a-d_1280.jpg",
+  "vh1-x17": "uploads/Website%20Images%20for%20Claude%20Design/1650848393-d845d6aa48d13f8af1ee701e5aa820eb5fea54771a14bc26a03dbf65d5570102-d_1280.jpg",
+  "mattel-disney-glittering-lights-castle": "uploads/Website%20Images%20for%20Claude%20Design/474704513-c097532b190f31aae2f6e4bab738ebe232ebc8a9cbd5722d5e1ced16cdfdff92-d_1280.jpg",
+  "comcast": "uploads/Website%20Images%20for%20Claude%20Design/974687279-17cec5862cb534d5ce8e833ab9e3f62260aa886a236180884d13ffd1cc0cbb73-d_1280.jpg",
+  "cw-animal-crackers": "uploads/Website%20Images%20for%20Claude%20Design/1106739660-b15f8908fc0ee43c05929223a18f53ff0b161a62ec5e2fb9224053d0a3233180-d_1280.jpg",
+  "sizzle-jp-connelly-production-design": "uploads/Website%20Images%20for%20Claude%20Design/1650854627-52e185f63e2d04faa189d7d377d754e05f558f5440c124e47d58fbf409e9d852-d_1280.jpg",
+  "sizzle-brian-graden-media": "uploads/Website%20Images%20for%20Claude%20Design/974691001-0ed1a55df79433f825addd41f6526fd6c23ffcc816ea5101318725a9b2360ef0-d_1280.jpg",
+  "sizzle-hearst-media": "uploads/Website%20Images%20for%20Claude%20Design/1650860872-82d487439b2577f46045112ca72646e87af5fd937c0bf3e598d7c3bf1316280e-d_1280.jpg",
+  "usc-honoring-the-past": "uploads/Website%20Images%20for%20Claude%20Design/1064196439-1467fabf1b389784ecaa0ab19f6cc7aeeb8445f65b34457afc849e3953fa0289-d_1280.jpg",
+  "miami-project-to-cure-paralysis": "uploads/Website%20Images%20for%20Claude%20Design/1109643282-7b906dc0f037e9e5d2bc43c645c5d1065df84e64a8cfed3d562cd2fe252a0194-d_1280.jpg",
+  "knox-box": "uploads/Website%20Images%20for%20Claude%20Design/1064201241-249f3a2d8910ad19f2287d5182b92327ae8a600f36012c9d6ffcb18714c70b4f-d_1280.jpg",
+  "belle-of-the-ball": "uploads/Website%20Images%20for%20Claude%20Design/1365876061-882a35b6e3132060ba67d725b3bbb6eadfb8dc1723ceadf7486019a0211cfa7e-d_1280.jpg",
+  "belle-of-the-ball-gold-country": "uploads/Website%20Images%20for%20Claude%20Design/1380562118-40f166923650b1a5ac0a6ad9b376c552d8b265a96dd6bafc4fa8ab5b5454baf8-d_1280.jpg",
+  "belfor-its-more": "uploads/Website%20Images%20for%20Claude%20Design/Screenshot-2023-12-05-at-6.33.37-PM.png",
+  "bloomers-the-lost-season": "uploads/Website%20Images%20for%20Claude%20Design/Bloomers-Poster-Frame-untreated-scaled.png",
+  "the-sorceress-and-the-boy": "uploads/Website%20Images%20for%20Claude%20Design/regionus.jpg"
+};
+const VIDS = {
+  "showdown": "281877670",
+  "metamorphosis": "260876029",
+  "the-resident": "87027609",
+  "the-empress-and-the-thief": "249487622",
+  "element-of-air": "536154318",
+  "eldars-quest": "194270526",
+  "deep-secrets": "536136089",
+  "beneath-the-stars": "451646924",
+  "batten-the-hatches": "536136068",
+  "warp-speed": "536136096",
+  "fx-fearless": "536055087",
+  "trailer-batman-dark-knight-rises": "86941504",
+  "fx-trailer-american-crime-story-versace": "258510439",
+  "cowboys-and-aliens": "86942610",
+  "trailer-orphan": "86942608",
+  "trailer-whiteout": "86942609",
+  "film-clip-the-chosen-story-of-lilith": "187588965",
+  "skechers-just-bounce": "537400130",
+  "skechers-puppy-tough": "537401460",
+  "welcome-to-the-bridge": "536136104",
+  "fire-in-the-hole": "536136075",
+  "mission-accomplished": "536136081",
+  "dance-headspace": "281883475",
+  "the-housefly": "142223950",
+  "across-the-seas": "142107618",
+  "the-forgotten": "611180755",
+  "spotify-secret-genius": "467898996",
+  "oddly-satisfying-science": "792357931",
+  "nbc-play-it-forward": "815698758",
+  "wetv-petty-court": "533739310",
+  "poptv-roccos-weho": "467934964",
+  "freeform-growing-up-gonzalez": "467966885",
+  "nickelodeon-thats-easy-for-you-to-say": "533740881",
+  "travel-channel-southern-psychic": "467933759",
+  "oxygen-the-love-car": "467929360",
+  "lifetime-temmoraland": "467968086",
+  "vh1-x17": "533741882",
+  "mattel-disney-glittering-lights-castle": "94794349",
+  "comcast": "467901738",
+  "cw-animal-crackers": "533737930",
+  "sizzle-jp-connelly-production-design": "668996900",
+  "sizzle-brian-graden-media": "467917951",
+  "sizzle-hearst-media": "815717557",
+  "usc-honoring-the-past": "514002382",
+  "miami-project-to-cure-paralysis": "535990513",
+  "knox-box": "514001203",
+  "belle-of-the-ball": "445411356",
+  "belle-of-the-ball-gold-country": "680683804",
+  "belfor-its-more": "891686217",
+  "the-sorceress-and-the-boy": "1133925600"
+};
+let P = [
+  ["FILM: The Party","the-party","2026",["Producer","Editor","Composer"],"An AI animated story about shyness, belonging, and the courage it takes to say yes.",1,"1210951309"],
+  ["FILM: The Sorceress and the Boy","the-sorceress-and-the-boy","2025",["Editor","Composer","Producer"],"Blending human storytelling with emerging AI technology, this short film explores how narrative, music and emotion can be crafted in new cinematic ways. An experiment in the future of filmmaking — and a look at the creative possibilities ahead.",0,"1133925600"],
+  ["Bloomers: The Lost Season","bloomers-the-lost-season","2025",["Producer","Editor","Composer"],"Fourteen all-new episodes of the award-winning series, completed frame by frame as a one-man post team.",1],
+  ["NBC: Play it Forward","nbc-play-it-forward","2023",["Producer","Editor"],"Supervising Post Producer and Lead Editor on the Emmy-nominated docuseries with the Harlem Globetrotters, now in its third season.",1],
+  ["Curiosity Stream: Oddly Satisfying Science","oddly-satisfying-science","2023",["Producer","Editor"],"Supervising Producer and Lead Editor on the series with TikTok scientist Nick Uhas.",1],
+  ["WB Trailer: Batman – Dark Knight Rises","trailer-batman-dark-knight-rises","2012",["Composer"],"Trailer music for the Warner Bros. campaign — classical orchestration against contemporary sound design.",1],
+  ["Belfor: It’s More","belfor-its-more","2023",["Editor"]],
+  ["Spotify: Secret Genius","spotify-secret-genius","2019",["Editor"]],
+  ["Film: Metamorphosis","metamorphosis","2018",["Producer","Editor","Composer"]],
+  ["Film: The Resident","the-resident","2011",["Composer"]],
+  ["Film: The Empress and the Thief","the-empress-and-the-thief","2018",["Producer","Editor","Composer"]],
+  ["Theme Park: Eldar’s Quest","eldars-quest","2019",["Composer"]],
+  ["Showdown","showdown","2018",["Composer"]],
+  ["CW: Animal Crackers","cw-animal-crackers","2017",["Editor"]],
+  ["Mattel/Disney: Glittering Lights Castle","mattel-disney-glittering-lights-castle","2016",["Editor"]],
+  ["Video Game: Batten the Hatches","batten-the-hatches","2021",["Composer"]],
+  ["Lifetime: Temmoraland","lifetime-temmoraland","2016",["Editor","Producer"]],
+  ["Oxygen: The Love Car","oxygen-the-love-car","2015",["Editor","Producer"]],
+  ["WB Trailer: Orphan","trailer-orphan","2009",["Composer"]],
+  ["Travel Channel: Southern Psychic","travel-channel-southern-psychic","2016",["Editor","Producer"]],
+  ["Nickelodeon: That’s Easy for You to Say","nickelodeon-thats-easy-for-you-to-say","2015",["Editor","Producer"]],
+  ["Video Game: Beneath The Stars","beneath-the-stars","2021",["Composer"]],
+  ["Video Game: Warp Speed","warp-speed","2021",["Composer"]],
+  ["Video Game: Deep Secrets","deep-secrets","2021",["Composer"]],
+  ["FX Trailer: Fearless","fx-fearless","2017",["Composer"]],
+  ["Universal Trailer: Cowboys and Aliens","cowboys-and-aliens","2011",["Composer"]],
+  ["WB Trailer: Whiteout","trailer-whiteout","2009",["Composer"]],
+  ["Freeform: Growing Up Gonzalez","freeform-growing-up-gonzalez","2016",["Editor","Producer"]],
+  ["VH1: X17","vh1-x17","2014",["Producer","Editor"]],
+  ["POPtv: Rocco’s Weho","poptv-roccos-weho","2015",["Producer","Editor"]],
+  ["Skechers: Puppy Tough","skechers-puppy-tough","2014",["Composer"]],
+  ["Skechers: Just Bounce","skechers-just-bounce","2014",["Composer"]],
+  ["WEtv: Petty Court","wetv-petty-court","2016",["Editor","Producer"]],
+  ["The Forgotten","the-forgotten","2013",["Editor","Composer"]],
+  ["Theme Park: Element of Air","element-of-air","2018",["Composer"]],
+  ["Belle of the Ball: Gold Country","belle-of-the-ball-gold-country","2021",["Editor","Producer"]],
+  ["Belle of the Ball","belle-of-the-ball","2021",["Editor","Producer"]],
+  ["Across the Seas","across-the-seas","2013",["Composer"]],
+  ["The Housefly","the-housefly","2012",["Composer"]],
+  ["Dance: Headspace","dance-headspace","2014",["Composer"]],
+  ["Video Game: Mission Accomplished","mission-accomplished","2021",["Composer"]],
+  ["Video Game: Fire in the Hole","fire-in-the-hole","2021",["Composer"]],
+  ["Video Game: Welcome to the Bridge","welcome-to-the-bridge","2021",["Composer"]],
+  ["Film: The Chosen","film-clip-the-chosen-story-of-lilith","2015",["Composer"]],
+  ["FX Trailer: American Crime Story: Versace","fx-trailer-american-crime-story-versace","2018",["Composer"]],
+  ["Sizzle: Hearst Media","sizzle-hearst-media","2022",["Editor"]],
+  ["Sizzle: Brian Graden Media","sizzle-brian-graden-media","2019",["Editor"]],
+  ["Sizzle: JP Connelly Production Design","sizzle-jp-connelly-production-design","2019",["Editor"]],
+  ["Comcast","comcast","2018",["Producer","Editor"]],
+  ["USC – Honoring the Past","usc-honoring-the-past","2017",["Editor","Producer"]],
+  ["Miami Project to Cure Paralysis","miami-project-to-cure-paralysis","2016",["Editor","Producer"]],
+  ["Knox Box","knox-box","2015",["Editor"]]
+].map(function (r) {
+  const ORDER = ["Producer", "Editor", "Composer"];
+  const roles = (r[3] || []).slice().sort((a, b) => ORDER.indexOf(a) - ORDER.indexOf(b));
+  return { title: r[0], slug: r[1], year: r[2], roles: roles, blurb: r[4] || "", hero: !!r[5], vimeo: r[6] || VIDS[r[1]] || "", poster: POSTERS[r[1]] || "" };
+});
+
+const DROPPED = ["belle-of-the-ball","belle-of-the-ball-gold-country","knox-box","comcast"];
+// Formspree: create a form at formspree.io, paste its ID (the bit after /f/) here.
+const FORMSPREE_ID = "REPLACE_ME";
+const HERO_SLUGS = ["the-party","bloomers-the-lost-season","nbc-play-it-forward"];
+const PHANTOM = ["batten-the-hatches","fire-in-the-hole","mission-accomplished","deep-secrets","warp-speed","welcome-to-the-bridge","beneath-the-stars"];
+const SECTION_DEFS = [
+  { name: "Film & Television", slugs: ["the-party","the-sorceress-and-the-boy","bloomers-the-lost-season","nbc-play-it-forward","oddly-satisfying-science","metamorphosis","the-empress-and-the-thief","film-clip-the-chosen-story-of-lilith","the-resident","cw-animal-crackers","lifetime-temmoraland","spotify-secret-genius"] },
+  { name: "Trailers", slugs: ["trailer-batman-dark-knight-rises","cowboys-and-aliens","trailer-orphan","trailer-whiteout","fx-trailer-american-crime-story-versace","fx-fearless"] },
+  { name: "Pilots & Presentations", slugs: ["oxygen-the-love-car","nickelodeon-thats-easy-for-you-to-say","travel-channel-southern-psychic","wetv-petty-court","freeform-growing-up-gonzalez","poptv-roccos-weho","vh1-x17"] },
+  { name: "Immersive & Interactive", slugs: ["princess-cruises-voyage","agila-eksperience","dance-headspace"] },
+  { name: "Spec & Demo Scores", slugs: ["showdown","the-forgotten","the-housefly","across-the-seas"] },
+  { name: "Brand & Commercial", slugs: ["skechers-puppy-tough","skechers-just-bounce","mattel-disney-glittering-lights-castle","belfor-its-more","usc-honoring-the-past","miami-project-to-cure-paralysis"] },
+  { name: "Reels", slugs: ["sizzle-hearst-media","sizzle-brian-graden-media","sizzle-jp-connelly-production-design"] }
+];
+const AGILA = ["eldars-quest","element-of-air"];
+const GROUPS = [
+  { title: "Enchanted Kingdom: Agila — The EKsperience", slug: "agila-eksperience", year: "2018–2019", roles: ["Composer"],
+    blurb: "Ride score for the Agila attraction at Enchanted Kingdom, Philippines — written as two cues for a single permanent installation.",
+    children: AGILA, vimeo: "", poster: "uploads/images-7.jpeg" },
+  { title: "Princess Cruises: Phantom Bridge", slug: "princess-cruises-voyage", year: "2021", roles: ["Composer"],
+    blurb: "A hybrid escape room and video game experience built for one of Princess Cruises’ ships — seven cues scored as a single musical world.",
+    children: PHANTOM, vimeo: "", poster: "uploads/Star%20Princess%20Exterior%20Render.jpg" }
+];
+const ALL = P.slice();
+const BY_SLUG = {};
+ALL.forEach(function (p) { BY_SLUG[p.slug] = p; });
+GROUPS.forEach(function (g) { BY_SLUG[g.slug] = g; });
+ALL.forEach(function (p) { p.hero = HERO_SLUGS.indexOf(p.slug) !== -1; });
+P = GROUPS.concat(ALL.filter(function (p) {
+  return DROPPED.indexOf(p.slug) === -1 && PHANTOM.indexOf(p.slug) === -1 && AGILA.indexOf(p.slug) === -1;
+}));
+
+class Component extends DCLogic {
+  state = { filter: "All", sent: "", slug: "", vw: 0 };
+
+  componentDidMount() {
+    this._onHash = () => {
+      const h = (window.location.hash || "").replace(/^#/, "");
+      const slug = h.indexOf("/") === 0 ? h.slice(1) : "";
+      if (slug !== this.state.slug) this.setState({ slug });
+    };
+    window.addEventListener("hashchange", this._onHash);
+    this._onHash();
+    this._onWidth = () => {
+      const w = window.innerWidth;
+      if (w !== this.state.vw) this.setState({ vw: w });
+    };
+    window.addEventListener("resize", this._onWidth);
+    this._onWidth();
+    this._onScroll = () => {
+      const el = this._playhead;
+      if (!el) return;
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = max > 0 ? Math.min(1, window.scrollY / max) : 0;
+      el.style.height = (pct * 100).toFixed(2) + "%";
+    };
+    window.addEventListener("scroll", this._onScroll, { passive: true });
+    window.addEventListener("resize", this._onScroll);
+    this._onScroll();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this._onScroll);
+    window.removeEventListener("resize", this._onScroll);
+    window.removeEventListener("resize", this._onWidth);
+    window.removeEventListener("hashchange", this._onHash);
+    document.body.style.overflow = "";
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    const open = !!P.find((p) => p.slug === this.state.slug);
+    document.body.style.overflow = open ? "hidden" : "";
+    if (open && prevState.slug !== this.state.slug) window.scrollTo(0, 0);
+  }
+
+  renderVals() {
+    const filter = this.state.filter;
+    const tiered = (this.props.worksLayout ?? "tiered") === "tiered";
+    const matches = (p) => filter === "All" || p.roles.indexOf(filter) !== -1;
+    const list = P.filter(matches);
+    const showFeatured = tiered && filter === "All";
+    const vw = this.state.vw || 1280;
+    const featCols = vw < 700 ? 1 : vw < 1180 ? 2 : 3;
+    const featured = showFeatured ? list.filter((p) => p.hero) : [];
+    const inSections = showFeatured ? list.filter((p) => !p.hero) : list;
+    const tile = (p) => ({
+      title: p.title, year: p.year,
+      href: "#/" + p.slug,
+      poster: p.poster, hasPoster: !!p.poster, noPoster: !p.poster,
+      isGroup: !!p.children,
+      count: p.children ? p.children.length + " cues" : "",
+      roleLabel: p.roles.join(" · ")
+    });
+    const yearOf = (p) => {
+      const m = String(p.year || "").match(/\d{4}/g);
+      return m ? Math.max.apply(null, m.map(Number)) : -1;
+    };
+    const byYearDesc = (a, b) => yearOf(b) - yearOf(a);
+    const sections = SECTION_DEFS.map((s) => {
+      const items = s.slugs
+        .map((sl) => inSections.find((p) => p.slug === sl))
+        .filter(Boolean)
+        .sort(byYearDesc);
+      return { name: s.name, count: items.length + (items.length === 1 ? " project" : " projects"), items: items.map(tile) };
+    }).filter((s) => s.items.length > 0);
+    const placed = {};
+    SECTION_DEFS.forEach((s) => s.slugs.forEach((sl) => { placed[sl] = true; }));
+    const orphans = inSections.filter((p) => !placed[p.slug]).sort(byYearDesc);
+    if (orphans.length) sections.push({ name: "Other Work", count: orphans.length + (orphans.length === 1 ? " project" : " projects"), items: orphans.map(tile) });
+
+    const pill = (active) =>
+      "padding:9px 18px;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;font-weight:" +
+      (active ? "600" : "500") +
+      ";border-radius:2px;cursor:pointer;background:" +
+      (active ? "#F2F1EC" : "transparent") +
+      ";color:" +
+      (active ? "#16161A" : "rgba(242,241,236,0.78)") +
+      ";border:1px solid " +
+      (active ? "#F2F1EC" : "rgba(242,241,236,0.22)");
+
+    const current = P.find((p) => p.slug === this.state.slug) || BY_SLUG[this.state.slug] || null;
+    const kids = current && current.children ? current.children.map((s) => BY_SLUG[s]).filter(Boolean) : [];
+    const relatedList = current
+      ? P.filter((p) => p.slug !== current.slug && p.roles.some((r) => current.roles.indexOf(r) !== -1)).slice(0, 6)
+      : [];
+
+    return {
+      hasProject: !!current,
+      project: current && {
+        title: current.title,
+        year: current.year,
+        roleLabel: current.roles.join(" · "),
+        embed: current.vimeo ? "https://player.vimeo.com/video/" + current.vimeo + "?dnt=1&title=0&byline=0&portrait=0&badge=0" : "",
+        hasVideo: !!current.vimeo && !kids.length,
+        noVideo: !current.vimeo && !kids.length,
+        hasTracks: kids.length > 0,
+        noTracks: kids.length === 0,
+        tracks: kids.map((k) => ({
+          title: k.title.replace(/^[^:]+:\s*/, ""),
+          year: k.year,
+          embed: "https://player.vimeo.com/video/" + k.vimeo + "?dnt=1&title=0&byline=0&portrait=0&badge=0"
+        })),
+        poster: current.poster,
+        blurb: current.blurb || "",
+      },
+      related: relatedList.map((p) => ({
+        title: p.title,
+        href: "#/" + p.slug,
+        poster: p.poster, hasPoster: !!p.poster, noPoster: !p.poster,
+        roleLabel: p.roles.join(" · ")
+      })),
+      playheadRef: (el) => { this._playhead = el; },
+      filters: ["All", "Producer", "Editor", "Composer"].map((f) => ({
+        label: f,
+        style: pill(f === filter),
+        onClick: () => this.setState({ filter: f })
+      })),
+      countLabel: list.length + " projects" + (filter === "All" ? "" : " · " + filter),
+      showFeatured,
+      featGrid: "repeat(" + featCols + ",minmax(0,1fr))",
+      featured: featured.map((p, i) => ({
+        title: p.title, year: p.year, blurb: p.blurb,
+        href: "#/" + p.slug,
+        poster: p.poster, hasPoster: !!p.poster, noPoster: !p.poster,
+        roleLabel: p.roles.join(" · "),
+        span: featCols > 1 && featured.length % featCols === 1 && i === 0 ? "1 / -1" : "auto"
+      })),
+      sections,
+
+      clients: ["NBC","ABC","Warner Bros.","Universal","20th Century Fox","FX","CBS","Bravo","VH1","E!","Freeform","The CW","HGTV","Travel Channel","BET","A&E","Oxygen","Lifetime","Nickelodeon","Curiosity Stream","Spotify","Hearst Media","Mattel","Disney","Princess Cruises","Skechers","USC","The Point Foundation","LA LGBT Center"],
+      creditGroups: [
+        { name: "Film, Television & Streaming", items: [
+          { title: "Play It Forward with the Harlem Globetrotters", role: "Supervising Post Producer, Lead Editor", meta: "NBC · Emmy nom." },
+          { title: "Oddly Satisfying Science", role: "Supervising Producer, Lead Editor", meta: "Curiosity Stream" },
+          { title: "Earth Odyssey with Dylan Dreyer", role: "Segment Director", meta: "NBC" },
+          { title: "Oh Baby!", role: "Segment Director", meta: "ABC" },
+          { title: "Bloomers: The Lost Season", role: "Executive Producer, Post Team", meta: "YouTube · 2025" }
+        ]},
+        { name: "Trailers & Campaigns", items: [
+          { title: "Batman: The Dark Knight Rises", role: "Trailer Music", meta: "Warner Bros." },
+          { title: "Poltergeist", role: "Trailer Music", meta: "20th Century Fox" },
+          { title: "The Assassination of Gianni Versace", role: "Trailer Music", meta: "FX" },
+          { title: "Orphan", role: "Trailer Music", meta: "Warner Bros." },
+          { title: "Cowboys & Aliens", role: "Trailer Music", meta: "Universal" }
+        ]},
+        { name: "Score & Immersive", items: [
+          { title: "The Chosen", role: "Composer — full score", meta: "Feature · 2015" },
+          { title: "The Resident", role: "Ghostwriter for John Ottman", meta: "Hammer Films" },
+          { title: "Phantom Bridge", role: "Composer", meta: "Princess Cruises · Sky Princess" },
+          { title: "Agila: The EKsperience", role: "Composer", meta: "Enchanted Kingdom, PH" },
+          { title: "Headspace", role: "Composer", meta: "Modern dance" }
+        ]}
+      ],
+      formNote: this.state.sent === "ok" ? "Thanks — I'll be in touch shortly."
+        : this.state.sent === "sending" ? "Sending…"
+        : this.state.sent === "error" ? "Didn't go through — email evan@evanmonheit.com directly."
+        : FORMSPREE_ID === "REPLACE_ME" ? "Paste your Formspree form ID to go live."
+        : "Usually a reply within a day or two.",
+      formBusy: this.state.sent === "sending",
+      onSubmit: (e) => {
+        e.preventDefault();
+        const form = e.target;
+        if (FORMSPREE_ID === "REPLACE_ME") { this.setState({ sent: "ok" }); return; }
+        this.setState({ sent: "sending" });
+        fetch("https://formspree.io/f/" + FORMSPREE_ID, {
+          method: "POST",
+          headers: { Accept: "application/json" },
+          body: new FormData(form)
+        }).then((r) => {
+          if (!r.ok) throw new Error("bad status");
+          this.setState({ sent: "ok" });
+          form.reset();
+        }).catch(() => this.setState({ sent: "error" }));
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>
